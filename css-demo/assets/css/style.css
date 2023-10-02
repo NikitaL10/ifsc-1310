@@ -1,11 +1,72 @@
 /* css-demo stylesheet */
 
-body{
-    background-color: #FFE5BF;
+/*  ---------------Box Sizing-----------------  */
 
-}
-
-
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /*  --------------- Global Styles -----------------  */
+  
+  body{
+    font-family: 'Gloock', serif;
+    margin:0;
+  }
+  
+  
+  header.primary{
+    background-color:#263F73;
+    color:#ffffff;
+    text-align:center;
+    padding: 15px 20px;
+    text-shadow: 1px 1px #000000;
+  }
+  
+  header.primary h1{
+    font-size: 2.5rem;
+    margin: 20px;
+  }
+  
+  header.primary h1 a{
+    color:#fff;
+    text-decoration: none;
+  }
+  
+  header.primary h2{
+    font-size: 1.4rem;
+    margin: 10px;
+  }
+  
+  header.primary nav{
+    max-width: 960px;
+    margin: auto;
+  
+  }
+  
+  header.primary nav ul{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:0;
+  }
+  header.primary nav ul li{
+    list-style-type: none;
+  }
+  
+  header.primary nav a{
+    color:#fff;
+    text-decoration: none;
+    background-color:#000;
+    background-color: rgba(0,0,0,.4);
+    padding:16px 32px;
+    border-radius:16px;
+  }
 
 
 /* create a color skim 
