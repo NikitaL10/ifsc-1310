@@ -2,71 +2,163 @@
 
 /*  ---------------Box Sizing-----------------  */
 
+/* colors(yellow:#FFC745) */
+
 html {
-    box-sizing: border-box;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  
-  /*  --------------- Global Styles -----------------  */
-  
-  body{
-    font-family: 'Gloock', serif;
-    margin:0;
-  }
-  
-  
-  header.primary{
-    background-color:#263F73;
-    color:#ffffff;
-    text-align:center;
-    padding: 15px 20px;
-    text-shadow: 1px 1px #000000;
-  }
-  
-  header.primary h1{
-    font-size: 2.5rem;
-    margin: 20px;
-  }
-  
-  header.primary h1 a{
-    color:#fff;
-    text-decoration: none;
-  }
-  
-  header.primary h2{
-    font-size: 1.4rem;
-    margin: 10px;
-  }
-  
-  header.primary nav{
-    max-width: 960px;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*  --------------- Utility Styles -----------------  */
+
+.container {
+  width: 80vw;
+  margin: 40px auto;
+}
+
+#intro {
+  border-bottom: 1px dotted #c0c0c0;
+  padding-bottom: 14px;
+}
+
+/*  --------------- Responsive Images -----------------  */
+
+
+img{
+  max-width:100%;
+}
+
+
+
+
+
+/*  --------------- Global Styles -----------------  */
+
+body {
+  font-family: "Gloock", serif;
+  margin: 0;
+  background-color: #91aab4;
+}
+
+header.primary {
+  background-color: #263f73;
+  color: #ffc745;
+  text-align: center;
+  padding: 15px 20px;
+  text-shadow: 1px 1px #000000;
+}
+
+header.primary h1 {
+  font-size: 2.5rem;
+  margin: 20px;
+}
+
+header.primary h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header.primary h2 {
+  font-size: 1.4rem;
+  margin: 10px;
+}
+
+header.primary nav {
+  max-width: 960px;
+  margin: 40px auto 20px auto;
+}
+
+header.primary nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+}
+header.primary nav ul li {
+  list-style-type: none;
+}
+
+header.primary nav a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 8px 16px;
+  border-radius: 16px;
+  transition: 0.5s;
+}
+
+header.primary nav a:hover,
+header.primary nav:active {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#intro h2 {
+  color: ;
+  border-bottom: 1px dotted #c0c0c0;
+}
+
+#content{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  gap:20px;
+}
+
+
+#content article.post{
+  box-shadow: 0 4px 8px rgba(0,0,0,.4);
+  padding:10px;
+  font-size:1rem;
+  transition:.5s;
+}
+
+
+#content article.post:hover{
+  box-shadow: 0 12px 16px rgba(0,0,0,.4);
+}
+
+article.post figure{
+  margin:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------Media Queries------------------------ */
+
+@media screen and (max-width: 600px) {
+  header.primary nav ul {
+    flex-direction: column;
+    max-width: 250px;
     margin: auto;
-  
+    gap: 15px;
   }
-  
-  header.primary nav ul{
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding:0;
+
+  header.primary nav ul a {
+    display: block;
   }
-  header.primary nav ul li{
-    list-style-type: none;
-  }
-  
-  header.primary nav a{
-    color:#fff;
-    text-decoration: none;
-    background-color:#000;
-    background-color: rgba(0,0,0,.4);
-    padding:16px 32px;
-    border-radius:16px;
-  }
+}
 
 
 /* create a color skim 
