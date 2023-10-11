@@ -1,0 +1,25 @@
+/* colors
+yellow: #F2CD5C
+green: #95D98B
+skin color: #D9A5A0
+graphite: #262525
+
+*/
+
+
+/* additional
+
+navy: #1D1E40
+light-navy: #3F46AD
+graphite: #323648
+
+*/
+
+
+
+body {
+    font-family: 'Gloock', serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #fff;
+  }
