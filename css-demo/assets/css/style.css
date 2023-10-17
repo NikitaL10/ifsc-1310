@@ -180,9 +180,9 @@ aside .container a:hover {
   color: #fff; 
 }
 
-aside .container .widget footer {
+aside .container,.widget footer {
   color: #484D70;
-  font-size: 14px; /
+  font-size: 14px; 
 }
 
 #colophon {
