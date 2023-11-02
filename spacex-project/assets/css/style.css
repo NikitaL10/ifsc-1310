@@ -104,10 +104,24 @@ colors:
    padding-bottom: 0px;
    padding-left: 0px;
    padding-right: 0px;
+   margin: auto;
 
     }
 
+#return{
+  width: 800px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
 
+#crew{
+  width: 800px;
+  height: auto;
+  display: block;
+  margin: auto;
+
+}
   h1 {
     font-size: 36px;
     margin: 20px;
