@@ -14,12 +14,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <link rel="icon" href="assets/img/spacex-bar-icon.png" type="image/icon type">
+<script src="assets/js/scripts.js"></script>
 
 
 </head>
 
 <body>
-  <header class="primary">
+  <header class="primary" id="navbar">
     <a href="/"><img src="assets/img/spacex-logo-black-and-white.png" id="logo" alt="SpaceX Logo"></a>
     <div class="menu-icon" onclick="toggleMenu()">
       <div class="bar"></div>
@@ -32,7 +33,9 @@
       <li><a href="faq.html">Frequently Asked Questions</a></li>
     </ul>
   </header>
-  <p><img src="assets/img/dragoncrew.jpg" id="crewdragon" alt="Dragoncrew"/></p>
+  <div class="img">
+  <p><img src="assets/img/dragoncrew.jpg" id="crewdragon" alt="Crew Dragon"/></p>
+</div>
   <h1>Dragon Vehicle Overview</h1>
 
 <section id="intro" class="container">
