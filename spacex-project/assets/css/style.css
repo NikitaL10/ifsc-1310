@@ -95,16 +95,17 @@ colors:
     width: 100%;
   }
   
-  #crewdragon{
+  .full-width-image {
     width: 100%;
-   height: auto;
-   max-width: auto;
-   display: block;
-   padding-top: 0px;
-   padding-bottom: 0px;
-   padding-left: 0px;
-   padding-right: 0px;
-   margin: auto;
+    overflow: hidden; 
+  }
+
+  #crewdragon{
+    display: block;
+    margin: 25px 0;
+    padding: 0;
+    width: 100%; 
+    height: auto;
 
     }
 
@@ -120,6 +121,8 @@ colors:
   height: auto;
   display: block;
   margin: auto;
+
+
 
 }
   h1 {
@@ -182,18 +185,37 @@ colors:
  
   @media screen and (max-width: 790px) {
     .menu-icon {
-      display: block; 
+      display: block;
+      cursor: pointer;
+    }
+  
+    .menu-icon #menu-button {
+      display: block;
+      text-align: center;
+      padding: 10px 0;
+      background: #1f1f1f;
+      color: #fff;
+      cursor: pointer;
     }
   
     .navigation {
-      display: none; /* Hide the navigation links by default on smaller screens */
+      display: none;
       position: absolute;
       top: 70px;
       left: 0;
       width: 100%;
-      background: #1f1f1f; /* Background color for the mobile menu */
+      background: #1f1f1f;
     }
   
+    /* Style the navigation links */
+    .navigation li {
+      display: block;
+      text-align: center;
+      margin: 10px 0;
+    }
+    .navigation li a {
+      display: block;
+    }
     h1 {
       margin: auto 15px;
     }
@@ -231,4 +253,45 @@ colors:
     
     }
     
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .navigation {
+      display: none;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background: #1f1f1f;
+    }
+  
+    
+    .navigation li {
+      display: block;
+      text-align: center;
+      margin: 10px 0;
+    }
+    .navigation li a {
+      display: block;
+    }
+  
+    
+    #menu-button {
+      display: block;
+      text-align: center;
+      padding: 10px 0;
+      background: #1f1f1f;
+      color: #fff;
+      cursor: pointer;
+    }
   }
+  
+  
+  
+  
+  
+  
+
+  
