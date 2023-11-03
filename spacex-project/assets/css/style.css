@@ -286,6 +286,12 @@ colors:
       color: #fff;
       cursor: pointer;
     }
+
+    #logo {
+      width: 150px; 
+      height: auto; 
+      margin-right: auto; 
+    }
   }
   
   
