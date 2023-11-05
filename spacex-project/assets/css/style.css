@@ -290,6 +290,9 @@ colors:
      height: 10px;
     }
 
+    .scroll {
+      display: none;
+    }
 
   }
   
