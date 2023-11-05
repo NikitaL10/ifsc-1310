@@ -285,7 +285,10 @@ colors:
       margin-right: auto; 
     }
 
-   
+    #section01 a span {
+     width: 10px;
+     height: 10px;
+    }
 
 
   }
@@ -293,8 +296,8 @@ colors:
   
   
   
-  
-  @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+  /* scroll button */
+  @import url(https://fonts.googleapis.com/css2?family=Space+Mono&display=swap);
 
 #section01 {
   position: relative;
@@ -306,8 +309,8 @@ colors:
   bottom: 0;
   left: 0;
   content: '';
-  width: 100%;
-  height: 80%;
+  width: 20px;
+  height: auto;
   background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
   background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
 }
@@ -327,14 +330,15 @@ colors:
   transition:.3s;
 }
 .scroll a:hover {
-  opacity: .5;
+  opacity: .75;
   color: #0D0D0D;
 }
 
 
 
 #section01 a {
-  padding-top: 60px;
+  padding-top: 35px;
+  
 }
 #section01 a span {
   position: absolute;
@@ -352,33 +356,7 @@ colors:
 
 
 
-#section02 a {
-  padding-top: 60px;
-}
-#section02 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 46px;
-  height: 46px;
-  margin-left: -23px;
-  border: 1px solid #fff;
-  border-radius: 100%;
-  box-sizing: border-box;
-}
-#section02 a span::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  content: '';
-  width: 16px;
-  height: 16px;
-  margin: -12px 0 0 -8px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  box-sizing: border-box;
-}
+
+
 
   
