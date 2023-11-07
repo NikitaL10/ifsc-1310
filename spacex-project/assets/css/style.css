@@ -113,7 +113,7 @@ colors:
 
     }
 
-#crewdragon-faq,#crewdragonhp{
+#crewdragon-faq,#crewdragonhp,#crew-about{
   width: 100vw;
       height: 100vh;
       display: block;
@@ -121,7 +121,80 @@ colors:
 }
 
 
-   
+.contact {
+  background-color: transparent; 
+  color: #fff; 
+  padding: 20px;
+  margin: 40px auto;
+}
+
+.contact h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.contact li a {
+  color: #fff;
+}
+
+/* about*/
+form {
+  margin: 20px 0;
+}
+
+form label {
+  display: block;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #fff; 
+  border-radius: 5px;
+  background-color: #0D0D0D; /* Black background color */
+  color: #fff;
+  font-size: 16px;
+}
+
+form textarea {
+  height: 150px;
+}
+
+form button {
+  background-color: #fff; /* Light blue background color */
+  color: #0D0D0D;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+form button:hover {
+  background-color: #1DCBF2; /* Slightly darker blue on hover */
+}
 
 
 #return,#crew,#dlab{

@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<link rel="icon" href="assets/img/spacex-bar-icon.png" type="image/icon type">
+<link rel="icon" href="assets/img/spacex-bar-icon.png" type="image/icon">
 <script src="assets/js/scripts.js"></script>
 
 
@@ -27,10 +27,9 @@
       <div class="bar"></div>
       <div class="bar"></div>
       <div class="bar"></div>
-      <div class="bar"></div>
     </div>
     <ul class="navigation">
-      <li><a href="#">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="history.html">History</a></li>
       <li><a href="faq.html">Frequently Asked Questions</a></li>
       <li><a href="about.html">About</a></li>
@@ -38,13 +37,52 @@
   </header>
   
   <div class="full-width-image">
-    <img src="assets/img/dragoncrew.jpg" id="crewdragon" alt="Crew Dragon" />
-    <section id="section01"class="scroll">
+    <img src="assets/img/crew-dragon-about.jpg" id="crew-about" alt="Crew Dragon" />
+    <section id="section01" class="scroll">
     <a href="#intro"><span></span>Scroll</a></section>
 
 </div>
+<h1>About</h1>
 
+<section id="intro" class="container">
+  <h2>Dragon is a free-flying spacecraft designed to deliver both cargo and people to orbiting destinations.</h2>
+  <p>SpaceX, also known as Space Exploration Technologies Corp., is an American aerospace manufacturer and space transportation company founded by entrepreneur Elon Musk in 2002. Headquartered in Hawthorne, California, SpaceX has become a leading force in the space industry.</p>
 
+<p>Our primary mission is to revolutionize space technology and enable the colonization of Mars. We believe that making life multi-planetary is crucial for the long-term survival of humanity. SpaceX's ambitious goals include reducing the cost of space travel, making it possible for humans to live on other planets, and advancing scientific research beyond Earth.</p>
+
+<p>With a focus on innovation, sustainability, and reusability, SpaceX has achieved numerous milestones in space exploration. Some of our key achievements include the development of the Falcon 1, Falcon 9, Falcon Heavy, and Starship launch vehicles, as well as the Dragon spacecraft for cargo and crew missions to the International Space Station (ISS).</p>
+
+<p>We are dedicated to pushing the boundaries of what is possible in space technology and pioneering new frontiers. Our team of engineers, scientists, and visionaries work tirelessly to make space more accessible, inspiring future generations to explore the cosmos.</p>
+
+<p>Join us on our journey to explore and conquer the final frontier. Together, we aim to turn science fiction into reality and make the universe a place where humans can thrive.</p>
+
+</section>
+
+<section class="contact">
+  <h2>Contact Us</h2>
+  <p>If you have any questions, feedback, or inquiries, please don't hesitate to get in touch with us. You can reach us through the following contact methods:</p>
+
+  <ul>
+      <li>Email: <a href="mailto:info@spacex.com">info@spacex.com</a></li>
+      <li>Phone: +1 (123) 456-7890</li>
+      <li>Address: 123 Rocket Road, Super Heavy, CD, 90250</li>
+  </ul>
+
+  <p>Alternatively, you can use the contact form below to send us a message:</p>
+
+  <form action="submit_form.php" method="post">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+  </form>
+</section>
   
   <footer class="primary">
     &copy; 2023 SpaceX Project
