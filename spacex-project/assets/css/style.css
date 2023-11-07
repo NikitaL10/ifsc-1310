@@ -12,10 +12,7 @@ colors:
     width: 80vw;
     margin: 40px auto;
   }
-  
-  
-  
-  
+
   html {
     box-sizing: border-box;
   }
@@ -24,8 +21,7 @@ colors:
   *:after {
     box-sizing: inherit;
   }
-  
-  
+    
   body{
     margin: 0;
     padding: 0;
@@ -42,14 +38,13 @@ colors:
   }
   
   header.primary {
-    background-color: transparent; /* dark header background color */
+    background-color: transparent;
     color: #fff; /* header text color */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px;
-    position: fixed;
-    
+    position: fixed;  
   }
   
   .navigation {
@@ -74,7 +69,6 @@ colors:
     transition: all 0.3s ease-in-out;
   }
   
-
   .navigation li a::before {
     content: '';
     background: #fff;
@@ -104,6 +98,14 @@ colors:
     justify-content: flex-end;
   }
 
+  figcaption{
+    text-transform:uppercase;
+    color:#c0c0c0;
+    font-size:rem;
+    margin: 25px auto;
+    padding: 10px;
+  }
+
   #crewdragon{
     display: block;
     margin: 25px 0;
@@ -119,7 +121,6 @@ colors:
       display: block;
       margin: auto;
 }
-
 
 .contact {
   background-color: transparent; 
@@ -172,7 +173,7 @@ form textarea {
   margin-top: 5px;
   border: 1px solid #fff; 
   border-radius: 5px;
-  background-color: #0D0D0D; /* Black background color */
+  background-color: #0D0D0D; 
   color: #fff;
   font-size: 16px;
 }
@@ -182,7 +183,7 @@ form textarea {
 }
 
 form button {
-  background-color: #fff; /* Light blue background color */
+  background-color: #fff; 
   color: #0D0D0D;
   border: none;
   padding: 10px 20px;
@@ -193,11 +194,10 @@ form button {
 }
 
 form button:hover {
-  background-color: #1DCBF2; /* Slightly darker blue on hover */
+  background-color: #1DCBF2; 
 }
 
-
-#return,#crew,#dlab{
+#return,#crew,#dlab,#dragon-iss{
   width: 800px;
   height: auto;
   display: block;
@@ -219,7 +219,6 @@ form button:hover {
     font-size: 20px;
     margin: 15px 0;
   }
-  
   
   p {
     font-size: 16px;
@@ -245,9 +244,6 @@ form button:hover {
     text-align: center;
   }
   
-
-  
-  
   .menu-icon {
     display: none; /* hide the hamburger */
     cursor: pointer;
@@ -260,132 +256,6 @@ form button:hover {
     margin: 4px 0;
     transition: 0.4s;
   }
-  
- 
-  @media screen and (max-width: 790px) {
-    
-    .menu-icon {
-      display: block;
-      cursor: pointer;
-    }
-  
-    .menu-icon #menu-button {
-      display: block;
-      text-align: center;
-      padding: 10px 0;
-      background: #1f1f1f;
-      color: #fff;
-      cursor: pointer;
-    }
-  
-    .navigation {
-      display: none;
-      position: absolute;
-      top: 70px;
-      left: 0;
-      width: 100%;
-      background: #1f1f1f;
-    }
-  
-    /* Style the navigation links */
-    .navigation li {
-      display: block;
-      text-align: center;
-      margin: 10px 0;
-    }
-    .navigation li a {
-      display: block;
-    }
-    h1 {
-      margin: auto 15px;
-    }
-    
-    
-    h2 {
-      font-size: 24px;
-      margin: auto;
-    }
-    
-    h3 {
-      font-size: 20px;
-      margin: 15px 0;
-    }
-    
-    
-    p {
-      font-size: 0.8rem;
-      line-height: 1.5;
-      margin: auto;
-    }
-
-    #crewdragon-faq,#crewdragonhp,#crew-about{
-      width: 100%;
-      height: auto;
-      display: block;
-      margin: auto;
-}
-
-    #return,#crew,#dlab{
-      width: 100%;
-      height: auto;
-      display: block;
-      margin: auto;
-    }
-    
-   
-    .menu-icon {
-      display: block;
-      cursor: pointer;
-    }
-  
-    .navigation {
-      display: none;
-      position: absolute;
-      top: 70px;
-      left: 0;
-      width: 100%;
-      background: #1f1f1f;
-    }
-  
-    
-    .navigation li {
-      display: block;
-      text-align: center;
-      margin: 10px 0;
-    }
-    .navigation li a {
-      display: block;
-    }
-  
-    
-    #menu-button {
-      display: block;
-      text-align: center;
-      padding: 10px 0;
-      background: #1f1f1f;
-      color: #fff;
-      cursor: pointer;
-    }
-
-    #logo {
-      width: 150px; 
-      height: auto; 
-      margin-right: auto; 
-    }
-
-    #section01 a span {
-     width: 10px;
-     height: 10px;
-    }
-
-    .scroll {
-      display: none;
-    }
-
-  }
-  
-  
-  
   
   /* scroll button */
   @import url(https://fonts.googleapis.com/css2?family=Space+Mono&display=swap);
@@ -448,6 +318,132 @@ form button:hover {
 
 
 
+/* small screens */
 
+@media screen and (max-width: 790px) {
+    
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-icon #menu-button {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    background: #1f1f1f;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .navigation {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #1f1f1f;
+  }
+
+  .navigation li {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .navigation li a {
+    display: block;
+  }
+  h1 {
+    margin: auto 15px;
+  }
+  
+  
+  h2 {
+    font-size: 24px;
+    margin: auto;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin: 15px 0;
+  }
+  
+  
+  p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin: auto;
+  }
+
+  figcaption{
+    text-transform:uppercase;
+    color:#c0c0c0;
+    font-size:0.9rem;
+    margin: 10px 10px;
+  }
+
+  #crewdragon-faq,#crewdragonhp,#crew-about{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+  #return,#crew,#dlab,#dragon-iss{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  
+ 
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navigation {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #1f1f1f;
+  }
 
   
+  .navigation li {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .navigation li a {
+    display: block;
+  }
+
+  
+  #menu-button {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    background: #1f1f1f;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #logo {
+    width: 150px; 
+    height: auto; 
+    margin-right: auto; 
+  }
+
+  #section01 a span {
+   width: 10px;
+   height: 10px;
+  }
+
+  .scroll {
+    display: none;
+  }
+
+}
