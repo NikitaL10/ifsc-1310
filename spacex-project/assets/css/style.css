@@ -124,7 +124,7 @@ colors:
 .contact {
   background-color: transparent; 
   color: #fff; 
-  padding: 20px;
+  padding: 40px;
   margin: 40px auto;
 }
 
@@ -318,7 +318,7 @@ form button:hover {
       margin: auto;
     }
 
-    #crewdragon-faq,#crewdragonhp,#crewdragonhp{
+    #crewdragon-faq,#crewdragonhp,#crew-about{
       width: 100%;
       height: auto;
       display: block;
