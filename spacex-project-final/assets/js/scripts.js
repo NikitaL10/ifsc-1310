@@ -64,5 +64,30 @@ function hideUpdateModal() {
 }
 
 
+const launchDate = new Date('2023-12-03T00:00:00Z').getTime();
 
+function updateCountdown() {
+  const now = new Date().getTime();
+  const distance = launchDate - now;
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  const timerElement = document.getElementById('timer');
+
+  timerElement.innerHTML = `
+    <div>${days}d</div>
+    <div>${hours}h</div>
+    <div>${minutes}m</div>
+    <div>${seconds}s</div>
+  `;
+
+  if (distance < 0) {
+    timerElement.innerHTML = 'Launch has occurred!';
+  }
+}
+
+setInterval(updateCountdown, 1000);
 
