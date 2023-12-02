@@ -43,6 +43,22 @@
     </section>
   </div>
 
+  <section id="news">
+    <div class="news-item">
+      <button onclick="showUpdateModal('New Feature Released', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo metus.', ['assets/img/2.jpg', 'assets/img/1.png']);">Read More</button>
+    </div>
+    <!-- Add more news items as needed -->
+  </section>
+
+  <div id="update-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="hideUpdateModal()">&times;</span>
+      <h2 id="update-title"></h2>
+      <div id="image-carousel" class="carousel"></div>
+      <p id="update-description"></p>
+    </div>
+  </div>
+
   <h1>Dragon Vehicle Overview</h1>
 
 <section id="intro" class="container">

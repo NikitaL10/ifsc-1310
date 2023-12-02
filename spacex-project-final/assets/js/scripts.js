@@ -29,3 +29,40 @@ function toggleMenu() {
   }
 }
 
+
+function showUpdateModal(title, description, images) {
+  const modal = document.getElementById('update-modal');
+  const titleElement = document.getElementById('update-title');
+  const descriptionElement = document.getElementById('update-description');
+  const carouselElement = document.getElementById('image-carousel');
+
+  titleElement.textContent = title;
+  descriptionElement.textContent = description;
+
+  carouselElement.innerHTML = '';
+
+  images.forEach((imageUrl) => {
+    const imgElement = document.createElement('img');
+    imgElement.src = imageUrl;
+    imgElement.alt = title;
+    imgElement.style.width = '20%'; 
+    imgElement.style.height = '20%'; 
+    carouselElement.appendChild(imgElement);
+  });
+
+  modal.style.display = 'block';
+}
+
+function hideUpdateModal() {
+  const modal = document.getElementById('update-modal');
+  modal.style.display = 'none';
+
+  const carouselElement = document.getElementById('image-carousel');
+  carouselElement.innerHTML = ''; // Clear the content
+
+  // Reset image sizes here if needed
+}
+
+
+
+
