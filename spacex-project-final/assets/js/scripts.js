@@ -58,9 +58,8 @@ function hideUpdateModal() {
   modal.style.display = 'none';
 
   const carouselElement = document.getElementById('image-carousel');
-  carouselElement.innerHTML = ''; // Clear the content
+  carouselElement.innerHTML = ''; 
 
-  // Reset image sizes here if needed
 }
 
 
