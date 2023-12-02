@@ -154,6 +154,40 @@ colors:
   color: #fff;
 }
 
+.new {
+  display: block;
+  margin: auto;
+  width: fit-content;
+  background-color: #1f1f1f;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  position: relative; 
+  text-decoration: none; 
+}
+
+.new::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0); 
+  transform-origin: left; 
+  transition: transform 0.5s ease-in-out; 
+}
+
+.new:hover::before {
+  transform: scaleX(1); 
+}
+
+
+
 
 .modal {
   display: none;
@@ -186,50 +220,6 @@ colors:
   text-decoration: none;
   cursor: pointer;
 }
-
-
-/* about*/
-/* form {
-  margin: 20px 0;
-}
-
-form label {
-  display: block;
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #fff; 
-  border-radius: 5px;
-  background-color: #0D0D0D; 
-  color: #fff;
-  font-size: 16px;
-}
-
-form textarea {
-  height: 150px;
-}
-
-form button {
-  background-color: #fff; 
-  color: #0D0D0D;
-  border: none;
-  padding: 10px 20px;
-  font-size: 18px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-form button:hover {
-  background-color: #1DCBF2; 
-} */
 
 
 #wufoo-z13my2ky1lo27hk{
