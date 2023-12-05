@@ -17,6 +17,8 @@
 </head>
 <body>
   <header class="primary" id="navbar">
+    <button id="lightModeToggle" onclick="toggleLightMode()">Light Mode</button>
+
     <a href="/"><img src="assets/img/spacex-logo-black-and-white.png" id="logo" alt="SpaceX Logo"></a>
     <div class="menu-icon" onclick="toggleMenu()">
       <div class="bar"></div>
@@ -43,6 +45,11 @@
   <section id="intro" class="container">
     <h2>Exploring the SpaceX Dragon</h2>
     <p>Discover the fascinating world of SpaceX's Dragon spacecraft, designed for various missions, from resupplying the International Space Station (ISS) to venturing beyond Earth's orbit. Get answers to your most common questions about this incredible spacecraft.</p>
+    <h2>When is next CrewDragon Launch?</h2>
+    <div id="countdown">
+      <h2>Next SpaceX Launch Countdown</h2>
+      <div id="timer"></div>
+    </div>
   </section>
 
   <section id="content" class="container">

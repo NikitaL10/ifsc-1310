@@ -109,16 +109,8 @@ colors:
     padding: 10px;
   }
 
-  #crewdragon{
-    display: block;
-    margin: 25px 0;
-    padding: 0;
-    width: 100%; 
-    height: auto;
 
-    }
-
-#crewdragon-faq,#crewdragonhp,#crew-about{
+    #crewdragon,#crewdragon-faq,#crewdragonhp,#crew-about{
   width: 100vw;
       height: 100vh;
       display: block;
@@ -190,6 +182,22 @@ colors:
 }
 
 
+.light-mode .new {
+
+  background-color: #fff;
+  color: #000;
+   
+}
+
+.light-mode .new::before {
+  background-color: #0D0D0D;
+}
+
+.light-mode .new:hover::before {
+  transform: scaleX(1); 
+}
+
+
 
 
 .modal {
@@ -225,10 +233,45 @@ colors:
 }
 
 
+.light-mode .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2; 
+}
+
+.light-mode .modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 80%;
+}
+
+.light-mode .close {
+  color: #0D0D0D;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.light-mode .close:hover,
+.light-mode .close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 #countdown {
   text-align: center;
   margin-top: 20px;
 }
+
+
 
 #timer {
   display: flex;
@@ -240,6 +283,13 @@ colors:
   background-color: #0D0D0D;
   padding: 10px;
   border-radius: 5px;
+  border: 2px solid #fff; 
+}
+
+.light-mode #timer {
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #000; 
 }
 
 
@@ -371,6 +421,11 @@ colors:
     margin-bottom: 0.5em;
   }
 
+.videos{
+    display: block;
+    margin: auto;
+  }
+
 
   /* scroll button */
   @import url(https://fonts.googleapis.com/css2?family=Space+Mono&display=swap);
@@ -497,7 +552,7 @@ colors:
     margin: 10px 10px;
   }
 
-  #crewdragon-faq,#crewdragonhp,#crew-about{
+  #crewdragon,#crewdragon-faq,#crewdragonhp,#crew-about{
     width: 100%;
     height: auto;
     display: block;

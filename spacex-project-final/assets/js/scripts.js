@@ -64,7 +64,7 @@ function hideUpdateModal() {
 }
 
 // countdown to next launch changing manualy
-const launchDate = new Date('2023-12-06T00:00:00Z').getTime();
+const launchDate = new Date('2023-12-12T00:00:00Z').getTime();
 
 function updateCountdown() {
   const now = new Date().getTime();
