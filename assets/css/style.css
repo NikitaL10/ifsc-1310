@@ -104,13 +104,37 @@ a.external:hover {
 }
 
 /* Responsive navigation */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 920px) {
   nav ul {
     flex-direction: column;
     text-align: center;
   }
 
   nav ul li {
+    margin-right: 0; 
     margin-bottom: 10px;
   }
+
+  nav ul ul {
+    position: static; 
+    display: none; 
+  }
+
+  nav ul li:hover > ul {
+    display: none; 
+  }
+
+  nav ul ul li {
+    width: 100%; 
+    float: none;
+    display: list-item;
+    position: relative;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  nav ul li:hover > ul {
+    display: inherit;
+  }
+
 }
