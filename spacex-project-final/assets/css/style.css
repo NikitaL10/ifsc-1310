@@ -30,6 +30,9 @@ colors:
      color: #fff; 
   }
   
+
+  
+
   /* header */
   #logo {
     width: 300px; 
@@ -253,7 +256,38 @@ colors:
 }
 
 
+.dark-mode {
+  background-color: #0D0D0D;
+  color: #fff;
+}
 
+.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+.light-mode #lightModeToggle {
+  color: #000; 
+}
+
+.container {
+  width: 80vw;
+  margin: 40px auto;
+}
+
+
+#lightModeToggle {
+  position: fixed;
+  right: 10px;
+  top: -2px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+}
 
 
 #return,#crew,#dlab,#dragon-iss{

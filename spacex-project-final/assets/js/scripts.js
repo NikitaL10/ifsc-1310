@@ -1,3 +1,4 @@
+// hidding of navbar after a certain height
 var prevScrollpos = window.scrollY;
 var navbar = document.getElementById("navbar");
 var scrollHeightThreshold = 440; 
@@ -18,7 +19,7 @@ window.onscroll = function() {
 }
 
 
-
+// hamburbur
 function toggleMenu() {
   var navigation = document.querySelector(".navigation");
   if (navigation.style.display === "block") {
@@ -29,7 +30,7 @@ function toggleMenu() {
   }
 }
 
-
+// what's new button script
 function showUpdateModal(title, description, images) {
   const modal = document.getElementById('update-modal');
   const titleElement = document.getElementById('update-title');
@@ -62,8 +63,8 @@ function hideUpdateModal() {
 
 }
 
-
-const launchDate = new Date('2023-12-03T00:00:00Z').getTime();
+// countdown to next launch changing manualy
+const launchDate = new Date('2023-12-06T00:00:00Z').getTime();
 
 function updateCountdown() {
   const now = new Date().getTime();
@@ -90,3 +91,52 @@ function updateCountdown() {
 
 setInterval(updateCountdown, 1000);
 
+//light/dark theme toggle button
+
+function toggleLightMode() {
+  const body = document.body;
+  const currentMode = body.classList.contains('light-mode') ? 'light-mode' : 'dark-mode';
+
+  if (currentMode === 'light-mode') {
+    body.classList.remove('light-mode');
+    body.classList.add('dark-mode');
+  } else {
+    body.classList.remove('dark-mode');
+    body.classList.add('light-mode');
+  }
+
+  updateLightModeButtonText(); 
+  saveLightModePreference();
+}
+
+// preffered theme sets for next session
+document.addEventListener('DOMContentLoaded', () => {
+  const prefersLightMode = localStorage.getItem('prefersLightMode');
+
+  if (prefersLightMode === null) {
+    document.body.classList.add('dark-mode');
+    saveLightModePreference();
+  } else if (prefersLightMode === 'true') {
+    document.body.classList.add('light-mode');
+  }
+
+  updateLightModeButtonText(); 
+});
+
+function saveLightModePreference() {
+  const body = document.body;
+  const prefersLightMode = body.classList.contains('light-mode');
+
+  localStorage.setItem('prefersLightMode', prefersLightMode);
+}
+
+function updateLightModeButtonText() {
+  const lightModeToggle = document.getElementById('lightModeToggle');
+  const body = document.body;
+
+  if (body.classList.contains('light-mode')) {
+    lightModeToggle.textContent = 'Dark Mode';
+  } else {
+    lightModeToggle.textContent = 'Light Mode';
+  }
+}
