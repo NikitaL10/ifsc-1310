@@ -616,4 +616,9 @@ colors:
     display: none;
   }
 
+  iframe{
+    width: 520px;
+    height: 370px;
+  }
+
 }
